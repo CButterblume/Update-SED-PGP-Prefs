@@ -1,7 +1,7 @@
 ###
 
-#$Path2PGPPrefs = $env:appdata +"\PGP Corporation\PGP\PGPprefs.xml"
-$Path2PGPPrefs = ".\PGPprefs.xml" #Testing
+$Path2PGPPrefs = $env:appdata +"\PGP Corporation\PGP\PGPprefs.xml"
+#$Path2PGPPrefs = ".\PGPprefs.xml" #Testing
 $SearchStrings = @("passthroughInboundSMIME","mailSmimeDecryptWithAnyKey","annotateMessages")
 $XMLTextContent = Get-Content -Path $Path2PGPPrefs
 $falseSetting = "<false></false>"
